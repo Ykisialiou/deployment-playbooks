@@ -1,0 +1,16 @@
+---
+### Install debug packages
+
+- name: Install packages
+  apt: name={{ item }} state=present update_cache=yes
+  with_items:
+    - rsync
+    - iotop
+    - dstat
+    - htop
+    - sysstat
+    - tcpdump
+    - net-tools
+    - mc
+    - cloud-utils
+    - mtr  
